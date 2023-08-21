@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="images/truco-icon-256.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fff">
+    <meta name="description" content="Pontuador de Truco.">
+    <title>Truco</title>
+</head>
+<body>
+    <section class="content">
+        <h1><span>♦️</span>Truco dos Crias<span>♥️</span></h1>
+        <form>
+            <label for="team1">Equipe 1</label>
+            <input type="text" id="team1" required>
+            <label for="team2">Equipe 2</label>
+            <input type="text" id="team2" required>
+            <input type="submit" value="Começar" id="btn">
+        </form>
+    </section>
+    <main id="game">
+        <div class="team">
+            <h2 id="team1-name"></h2>
+            <button onclick="add(1, 1)">+1</button>
+            <button onclick="add(3, 1)">+3</button>
+            <button onclick="add(6, 1)">+6</button>
+            <button onclick="add(12, 1)">+12</button>
+        </div>
+        <div class="team">
+            <h2 id="team2-name"></h2>
+            <button onclick="add(1, 2)">+1</button>
+            <button onclick="add(3, 2)">+3</button>
+            <button onclick="add(6, 2)">+6</button>
+            <button onclick="add(12, 2)">+12</button>
+        </div>
+    </main>
+    <aside id="score">
+        <h2>0</h2>
+        <h2>0</h2>
+        <div class="mainBtn">
+            <button onclick="reset()" id="btnGame">Terminar Jogo</button>
+        </div>
+    </aside>
+    <section id="wins">
+        <h1>Vitórias 👑</h1>
+        <h2>0</h2>
+        <h2>0</h2>
+        <h1></h1>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

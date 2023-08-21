@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+body{
+    font-family: 'Rubik', sans-serif;
+    display: grid;
+    background-color: #edeef0;  
+    grid-template-columns: 100%;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}   
+
+.content{
+    display: grid;
+    margin: auto;
+    justify-content: center;
+    background-color: white;
+    min-width: 320px;
+    padding: 50px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+h1{
+    font-weight: 100;
+}
+
+form{
+    text-align: left;
+    display: grid;
+    margin-top: 40px;
+}
+
+input{
+    font-family: 'Rubik', sans-serif;
+    outline: none;
+    border: 1px solid;
+    border-color: rgb(173, 173, 173);
+    width: 100%;
+    height: 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+button{
+    background-color: #5a66cf;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    outline: 0;
+    width: 40%;
+    height: 20px;
+    color: white;
+}
+
+#btn{
+    margin-top: 2em;
+    background-color: #5a66cf;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: 0;
+    font-family: 'Rubik', sans-serif;
+    height: 30px;
+    transition: 0.5s;
+}
+
+#btn:hover{
+    background-color: #6370e4;
+    transition: 0.5s;
+}
+
+span{
+    display: inline-block;
+    padding: 10px;
+    width: 20px;
+    color: #FF5A5F;
+}
+
+#game{
+    max-width: 800px;
+    width: 100%;
+    display: none;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.mainBtn{
+    grid-column: span 2;
+    width: 100%;
+    min-width: fit-content;
+}
+
+.mainBtn button{
+    box-sizing: border-box;
+    padding: 5px 10px;
+    width: 100%;
+    height: fit-content;
+}
+
+.team{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    justify-items: center;
+}
+
+.team button{
+    width: 90%;
+    padding: 5px 10px;
+    height: fit-content;
+    margin-bottom: 5px;
+}
+
+#score, #wins{
+    max-width: 800px;
+    padding: 10px;
+    width: 90%;
+    display: none;
+    grid-template-columns: 50% 50%;
+}
+
+#wins{
+    background-color: white;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+#wins h1{
+    grid-column: span 2;
+}
